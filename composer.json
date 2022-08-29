@@ -1,0 +1,32 @@
+{
+    "name": "roke22/array-to-object-factory",
+    "description": "Array to object that automatically maps array index to object constructor parameters",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Anton",
+            "email": "roke22@gmail.com",
+            "homepage": "http://roke.es"
+        }
+    ],
+    "require": {
+        "php": "^7.4||^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Roke\\ArrayToObjectFactory\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Roke\\ArrayToObjectFactory\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    }
+}
