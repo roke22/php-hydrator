@@ -12,7 +12,7 @@ It have declare strict types so value 1 is not the same as '1'. PHP is not going
 
 ## Example
 
-```
+```php
 class SimpleClass
 {
     protected string $name;
@@ -28,7 +28,7 @@ class SimpleClass
 
 You can create this class doing this:
 
-```
+```php
 $data = [
     'name' => 'John Doe',
     'is_active' => false
@@ -41,18 +41,18 @@ Array index are transformed to snake, camel and studly case to find the match be
 
 You can limit the conversion parssing a third parameter like this:
 
-```
+```php
 $object = ArrayToObject::make($data, SimpleClass::class, ArrayToObject::SNAKE);
 ```
 
 Or even don't convert any data:
-```
+```php
 $object = ArrayToObject::make($data, SimpleClass::class, ArrayToObject::NONE);
 ```
 
 Possible values are: 
-```
-ArrayToObject::ALL -> By default
+```php
+ArrayToObject::ALL // By default
 ArrayToObject::SNAKE
 ArrayToObject::CAMEL
 ArrayToObject::STUDLY
@@ -60,7 +60,7 @@ ArrayToObject::NONE
 ```
 
 Getting the original $data array as example:
-```
+```php
 $data = [
     'name' => 'John Doe',
     'is_active' => false
@@ -69,7 +69,7 @@ $data = [
 
 Array to object factory transform in the next array:
 
-```
+```php
 $data = [
     'name' => 'John Doe',
     'is_active' => false,
@@ -82,7 +82,7 @@ If some of the index conversion exists in the original array the data will be ov
 
 ## Example Complex class
 
-```
+```php
 class Classroom
 {
     protected int $number;
