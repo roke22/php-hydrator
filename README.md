@@ -1,4 +1,4 @@
-# Array to Object Factory
+# PHP Hydrator - Array to Object Factory
 
 ## What is array to object factory?
 
